@@ -1,0 +1,9 @@
+.Fieldset {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+  border: none;
+  padding: 0;
+  width: 100%;
+}

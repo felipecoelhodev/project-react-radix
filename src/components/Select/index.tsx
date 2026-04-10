@@ -21,7 +21,7 @@ const SelectDemo = () => {
           <Select.Viewport className="SelectViewport">
             <Select.Group>
               {quantidade.map((q) => (
-                <Select.Item className="SelectItem" value={`${q}`}>
+                <Select.Item className="SelectItem" value={`${q}`} key={q}>
                   <Select.ItemText>{q}</Select.ItemText>
                 </Select.Item>
               ))}

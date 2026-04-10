@@ -1,44 +1,40 @@
 .SwitchWrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .SwitchRoot {
   width: 42px;
   height: 25px;
-  background-color: #fff;
-  border-color: #49454f;
+  background-color: #30363d;
   border-radius: 9999px;
   position: relative;
+  border: none;
+  cursor: pointer;
+}
 
-  &:focus {
-    box-shadow: 0 0 0 1px black;
-  }
+.SwitchRoot:focus {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #6e40c9;
+}
 
-  &[data-state="checked"] {
-    background-color: #e6e0e9;
-  }
+.SwitchRoot[data-state="checked"] {
+  background-color: #6e40c9;
 }
 
 .SwitchThumb {
-  display: flex;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  background-color: #6750a4;
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: white;
   border-radius: 9999px;
   transition: transform 100ms;
-  transform: translateX(-6px) translateY(-0.5px);
+  transform: translateX(2px);
   will-change: transform;
-
-  &[data-state="checked"] {
-    transform: translateX(12px) translateY(-0.5px);
-  }
 }
 
-.Label {
-  color: #49454f;
-  font-size: 1rem;
-  user-select: none;
+.SwitchThumb[data-state="checked"] {
+  transform: translateX(19px);
 }

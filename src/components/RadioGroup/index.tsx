@@ -10,14 +10,13 @@ const genero = [
 const RadioGroupDemo = () => {
   return (
     <form>
-      <h1 className="Titulo">Gênero</h1>
       <RadioGroup.Root
         className="RadioGroupRoot"
         defaultValue="Outro"
         aria-label="Gênero"
       >
         {genero.map((g) => (
-          <div className="RadioGroupWrapper">
+          <div className="RadioGroupWrapper" key={g.id}>
             <RadioGroup.Item
               className="RadioGroupItem"
               value={g.opcao}

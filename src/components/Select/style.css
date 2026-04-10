@@ -2,43 +2,42 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 8px;
-  padding: 0 16px;
-  height: 33px;
-  width: 137px;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 13px;
+  line-height: 1;
+  height: 35px;
   gap: 5px;
-  background-color: white;
-  border: 1px solid #e23155;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  cursor: pointer;
 }
 
 .SelectTrigger:hover {
-  background-color: var(--mauve-3);
+  background-color: #161b22;
 }
 
 .SelectTrigger:focus {
-  box-shadow: 0 0 0 2px black;
+  box-shadow: 0 0 0 2px #1f6feb;
 }
 
 .SelectTrigger[data-placeholder] {
-  color: #e23155;
+  color: #8b949e;
 }
 
 .SelectIcon {
-  color: #e23155;
+  color: #8b949e;
 }
 
 .SelectContent {
-  position: fixed;
   overflow: hidden;
-  align-items: center;
-  min-width: 137px;
-  background-color: white;
-  border-radius: 0px 0px 8px 8px;
-  border: 1px solid #e23155;
-}
-
-.SelectContent[data-state="open"] {
-  transform: translateX(34.8%) translateY(21.8%);
+  background-color: #161b22;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  box-shadow:
+    0px 10px 38px -10px rgba(22, 23, 24, 0.35),
+    0px 10px 20px -15px rgba(22, 23, 24, 0.2);
 }
 
 .SelectViewport {
@@ -46,30 +45,21 @@
 }
 
 .SelectItem {
+  font-size: 13px;
+  line-height: 1;
+  color: #c9d1d9;
+  border-radius: 3px;
   display: flex;
   align-items: center;
   height: 25px;
-  padding: 0px 16px;
+  padding: 0 35px 0 25px;
   position: relative;
   user-select: none;
-}
-
-.SelectItem[data-disabled] {
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .SelectItem[data-highlighted] {
   outline: none;
-  background-color: white;
-  color: #e23155;
-}
-
-.SelectScrollButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 25px;
-  background-color: white;
-  color: #e23155;
-  cursor: default;
+  background-color: #1f6feb;
+  color: white;
 }

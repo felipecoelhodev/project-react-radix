@@ -1,0 +1,25 @@
+.Input {
+  width: 100%;
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 15px;
+  line-height: 1;
+  color: #c9d1d9;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  height: 35px;
+}
+
+.Input:focus {
+  border-color: #1f6feb;
+  box-shadow: 0 0 0 1px #1f6feb;
+  outline: none;
+}
+
+.Input::placeholder {
+  color: #8b949e;
+}

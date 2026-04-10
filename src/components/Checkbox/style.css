@@ -1,37 +1,44 @@
 .CheckboxWrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .CheckboxRoot {
-  background-color: white;
-  width: 18px;
-  height: 18px;
-  border-radius: 2px;
+  background-color: #0d1117;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
-  border: 2px solid #49454f;
+  border: 1px solid #30363d;
+  cursor: pointer;
 }
+
 .CheckboxRoot:hover {
-  background-color: var(--violet-3);
+  background-color: #161b22;
 }
+
 .CheckboxRoot:focus {
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 2px #6e40c9;
 }
 
 .CheckboxRoot[data-state="checked"] {
-  background-color: #6750a4;
-  border: none;
+  background-color: #6e40c9;
+  border-color: #6e40c9;
 }
 
 .CheckboxIndicator {
-  color: #ffffff;
-  font-size: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Label {
-  color: #49454f;
-  font-size: 1rem;
+  color: #c9d1d9;
+  font-size: 15px;
+  line-height: 1;
+  user-select: none;
 }

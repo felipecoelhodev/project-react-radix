@@ -1,6 +1,58 @@
 #root {
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
+}
+
+.AppTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.AppDescription {
+  font-size: 1.1rem;
+  color: #8b949e;
+  margin-bottom: 2rem;
+}
+
+.ComponentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.ComponentCard {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.ComponentCard.full-width {
+  grid-column: 1 / -1;
+}
+
+.CardTitle {
+  font-size: 1.2rem;
+  color: #c9d1d9;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.CardContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.CardContent.column {
+  flex-direction: column;
+  align-items: flex-start;
 }
