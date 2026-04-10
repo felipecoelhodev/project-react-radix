@@ -1,6 +1,6 @@
 # Radix UI Component Dashboard
 
-Um dashboard moderno e acessível construído com **React**, **TypeScript** e **Radix UI**. Este projeto foca em demonstrar a implementação de componentes de interface robustos, totalmente estilizados para **Dark Mode** e seguindo as melhores práticas de acessibilidade (WAI-ARIA). O projeto está em desenvolvimento onde frequentemente a interface será mudada para melhorar a acessibilidade e para acrescentar novos componentes.
+Um dashboard moderno e acessível construído com **React**, **TypeScript** e **Radix UI**. Este projeto foca em demonstrar a implementação de componentes de interface robustos, totalmente estilizados para **Dark Mode** e seguindo as melhores práticas de acessibilidade. O projeto está em desenvolvimento onde frequentemente a interface será mudada para melhorar a acessibilidade e para acrescentar novos componentes.
 
 ## Funcionalidades
 
